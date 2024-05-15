@@ -16,7 +16,6 @@ export class UsersController {
 
   @MessagePattern('get.users.byId')
   async findUserById(id: string): Promise<IUser> {
-    console.log(id);
     return this.usersService.findUserById(id);
   }
 
